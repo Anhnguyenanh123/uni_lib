@@ -11,8 +11,8 @@ const BookOverview = ({
   totalCopies,
   availableCopies,
   description,
-  color,
-  cover,
+  coverColor,
+  coverUrl,
   // eslint-disable-next-line no-undef
 }: Book) => {
   return (
@@ -59,12 +59,16 @@ const BookOverview = ({
           <BookCover
             variant="wide"
             className="z-10"
-            coverColor={color}
-            coverImage={cover}
+            coverColor={coverColor}
+            coverImage={coverUrl}
           />
 
           <div className="absolute left-16 top-10 rotate-12 opacity-40 max-sm:hidden">
-            <BookCover variant="wide" coverColor={color} coverImage={cover} />
+            <BookCover
+              variant="wide"
+              coverColor={coverColor}
+              coverImage={coverUrl}
+            />
           </div>
         </div>
       </div>
