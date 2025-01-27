@@ -12,6 +12,7 @@ const BookCard = ({
   color,
   cover,
   isLoanedBook = false,
+  // eslint-disable-next-line no-undef
 }: Book) => (
   <li className={cn(isLoanedBook && "xs:w-52 w-full")}>
     <Link

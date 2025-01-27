@@ -13,6 +13,7 @@ const BookOverview = ({
   description,
   color,
   cover,
+  // eslint-disable-next-line no-undef
 }: Book) => {
   return (
     <section className="book-overview">
